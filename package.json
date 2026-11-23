@@ -1,0 +1,12 @@
+{
+  "name": "product-image-review",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.mjs",
+    "check:ocr": "node scripts/check_ocr.mjs",
+    "evaluate:ocr": "node scripts/evaluate_ocr.mjs"
+  },
+  "dependencies": {
+    "tesseract.js": "7.0.0"
+  }
+}

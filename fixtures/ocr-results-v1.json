@@ -1,0 +1,86 @@
+{
+  "engine": "Tesseract.js 7.0.0",
+  "modelSha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+  "minimumConfidence": 75,
+  "referenceText": "250 g",
+  "textRegion": {
+    "x": 377,
+    "y": 499,
+    "width": 206,
+    "height": 61
+  },
+  "cases": [
+    {
+      "id": "A",
+      "image": "candidate-a.jpg",
+      "sha256": "9a7ac9c0ec28b829405c44ebb6246dfd2fd27b1a9ff3b0412fdad5e1529441a5",
+      "expectedStatus": "match",
+      "status": "match",
+      "readText": "250g",
+      "confidence": 88
+    },
+    {
+      "id": "B",
+      "image": "candidate-b.jpg",
+      "sha256": "20467d952ac7521cbab85fd91b82203e7512e4f43fd41b0f032d384f8e276e41",
+      "expectedStatus": "different",
+      "status": "different",
+      "readText": "280 g",
+      "confidence": 92
+    },
+    {
+      "id": "C",
+      "image": "candidate-c.jpg",
+      "sha256": "be0837ea3307ee2e177a231c7302c7abd4b04fcf8ad69801375e5d5e9f132e44",
+      "expectedStatus": "review",
+      "status": "review",
+      "readText": "- Ff",
+      "confidence": 0
+    },
+    {
+      "id": "D",
+      "image": "candidate-d.jpg",
+      "sha256": "3612f7c14ec6c2c08cd4df7a96c6a4ad6eb333f2a35911b4472a3acd93c31249",
+      "expectedStatus": "match",
+      "status": "match",
+      "readText": "250g",
+      "confidence": 91
+    },
+    {
+      "id": "E",
+      "image": "candidate-e.jpg",
+      "sha256": "342b9b48a338a7029259aeffd4e44da9179b9a2252008ad34757f5a057665124",
+      "expectedStatus": "match",
+      "status": "match",
+      "readText": "250g",
+      "confidence": 88
+    },
+    {
+      "id": "F",
+      "image": "original.jpg",
+      "sha256": "ee11c060818ea44e197f92f29a2ea6d8909519df6e5fa611a1357e6af9aaa604",
+      "expectedStatus": "match",
+      "status": "match",
+      "readText": "250g",
+      "confidence": 88
+    }
+  ],
+  "cropCorrection": {
+    "misplacedRegion": {
+      "x": 377,
+      "y": 566,
+      "width": 206,
+      "height": 28
+    },
+    "misplaced": {
+      "status": "review",
+      "readText": "gee",
+      "confidence": 0
+    },
+    "corrected": {
+      "status": "match",
+      "readText": "250g",
+      "confidence": 88
+    }
+  }
+}

@@ -1,0 +1,647 @@
+{
+  "recordedOn": "2026-11-19",
+  "engine": "Tesseract.js 7.0.0",
+  "protocol": "The split and threshold grid were specified before running this expansion. Choose the lowest calibration cost. False matches cost 5, false differences cost 2 and abstention on readable text costs 1. Ties retain the earlier threshold of 75 when possible, then prefer the lower threshold. Apply the chosen threshold to held-out cases without retuning.",
+  "modelSha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+  "selectedThreshold": 40,
+  "calibration": [
+    {
+      "threshold": 40,
+      "counts": {
+        "total": 8,
+        "falseMatches": 0,
+        "falseDifferences": 0,
+        "abstentions": 1,
+        "expectedReviews": 1,
+        "incorrectConclusionsOnObscuredText": 0
+      },
+      "cost": 1,
+      "cases": [
+        {
+          "id": "cal-clear",
+          "split": "calibration",
+          "image": "validation-cal-clear.jpg",
+          "visibleText": "250 g",
+          "truth": "match",
+          "sha256": "9a7ac9c0ec28b829405c44ebb6246dfd2fd27b1a9ff3b0412fdad5e1529441a5",
+          "readText": "250g",
+          "confidence": 88,
+          "status": "match"
+        },
+        {
+          "id": "cal-change",
+          "split": "calibration",
+          "image": "validation-cal-change.jpg",
+          "visibleText": "280 g",
+          "truth": "different",
+          "sha256": "20467d952ac7521cbab85fd91b82203e7512e4f43fd41b0f032d384f8e276e41",
+          "readText": "280 g",
+          "confidence": 92,
+          "status": "different"
+        },
+        {
+          "id": "cal-small",
+          "split": "calibration",
+          "image": "validation-cal-small.jpg",
+          "visibleText": "250 g",
+          "size": 16,
+          "truth": "match",
+          "sha256": "0bdde122fe5a78dbf748969e8ec18c80bacefa5a1c57a5f749c2c05f4857933b",
+          "readText": "250g",
+          "confidence": 75,
+          "status": "match"
+        },
+        {
+          "id": "cal-blur",
+          "split": "calibration",
+          "image": "validation-cal-blur.jpg",
+          "visibleText": "250 g",
+          "blur": 3,
+          "truth": "match",
+          "sha256": "2aae5b583681f8f7c5db29a9f4ddec5f5fb8e4d24d646ec5109ec2b150f5c851",
+          "readText": "",
+          "confidence": 0,
+          "status": "review"
+        },
+        {
+          "id": "cal-unit",
+          "split": "calibration",
+          "image": "validation-cal-unit.jpg",
+          "visibleText": "250 mg",
+          "truth": "different",
+          "sha256": "2c3e34a573ac63bd726136e94fd0d47923c1278a9571988bf31baf1d83c96389",
+          "readText": "250 mg",
+          "confidence": 95,
+          "status": "different"
+        },
+        {
+          "id": "cal-decimal",
+          "split": "calibration",
+          "image": "validation-cal-decimal.jpg",
+          "visibleText": "25.0 g",
+          "truth": "different",
+          "sha256": "f7277191fd64a4857f676adb0be934b9d89a0902e5febb3a7f0125bad5bbb931",
+          "readText": "25.0 g",
+          "confidence": 64,
+          "status": "different"
+        },
+        {
+          "id": "cal-serif",
+          "split": "calibration",
+          "image": "validation-cal-serif.jpg",
+          "visibleText": "250 g",
+          "font": "Georgia.ttf",
+          "truth": "match",
+          "sha256": "a1f099894a186eb59db7e7912cf0e920f9313672bb33605b151e7796552cd256",
+          "readText": "250 g",
+          "confidence": 80,
+          "status": "match"
+        },
+        {
+          "id": "cal-glare",
+          "split": "calibration",
+          "image": "validation-cal-glare.jpg",
+          "visibleText": "250 g",
+          "lighting": "glare",
+          "truth": "review",
+          "sha256": "be0837ea3307ee2e177a231c7302c7abd4b04fcf8ad69801375e5d5e9f132e44",
+          "readText": "- Ff",
+          "confidence": 0,
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "threshold": 60,
+      "counts": {
+        "total": 8,
+        "falseMatches": 0,
+        "falseDifferences": 0,
+        "abstentions": 1,
+        "expectedReviews": 1,
+        "incorrectConclusionsOnObscuredText": 0
+      },
+      "cost": 1,
+      "cases": [
+        {
+          "id": "cal-clear",
+          "split": "calibration",
+          "image": "validation-cal-clear.jpg",
+          "visibleText": "250 g",
+          "truth": "match",
+          "sha256": "9a7ac9c0ec28b829405c44ebb6246dfd2fd27b1a9ff3b0412fdad5e1529441a5",
+          "readText": "250g",
+          "confidence": 88,
+          "status": "match"
+        },
+        {
+          "id": "cal-change",
+          "split": "calibration",
+          "image": "validation-cal-change.jpg",
+          "visibleText": "280 g",
+          "truth": "different",
+          "sha256": "20467d952ac7521cbab85fd91b82203e7512e4f43fd41b0f032d384f8e276e41",
+          "readText": "280 g",
+          "confidence": 92,
+          "status": "different"
+        },
+        {
+          "id": "cal-small",
+          "split": "calibration",
+          "image": "validation-cal-small.jpg",
+          "visibleText": "250 g",
+          "size": 16,
+          "truth": "match",
+          "sha256": "0bdde122fe5a78dbf748969e8ec18c80bacefa5a1c57a5f749c2c05f4857933b",
+          "readText": "250g",
+          "confidence": 75,
+          "status": "match"
+        },
+        {
+          "id": "cal-blur",
+          "split": "calibration",
+          "image": "validation-cal-blur.jpg",
+          "visibleText": "250 g",
+          "blur": 3,
+          "truth": "match",
+          "sha256": "2aae5b583681f8f7c5db29a9f4ddec5f5fb8e4d24d646ec5109ec2b150f5c851",
+          "readText": "",
+          "confidence": 0,
+          "status": "review"
+        },
+        {
+          "id": "cal-unit",
+          "split": "calibration",
+          "image": "validation-cal-unit.jpg",
+          "visibleText": "250 mg",
+          "truth": "different",
+          "sha256": "2c3e34a573ac63bd726136e94fd0d47923c1278a9571988bf31baf1d83c96389",
+          "readText": "250 mg",
+          "confidence": 95,
+          "status": "different"
+        },
+        {
+          "id": "cal-decimal",
+          "split": "calibration",
+          "image": "validation-cal-decimal.jpg",
+          "visibleText": "25.0 g",
+          "truth": "different",
+          "sha256": "f7277191fd64a4857f676adb0be934b9d89a0902e5febb3a7f0125bad5bbb931",
+          "readText": "25.0 g",
+          "confidence": 64,
+          "status": "different"
+        },
+        {
+          "id": "cal-serif",
+          "split": "calibration",
+          "image": "validation-cal-serif.jpg",
+          "visibleText": "250 g",
+          "font": "Georgia.ttf",
+          "truth": "match",
+          "sha256": "a1f099894a186eb59db7e7912cf0e920f9313672bb33605b151e7796552cd256",
+          "readText": "250 g",
+          "confidence": 80,
+          "status": "match"
+        },
+        {
+          "id": "cal-glare",
+          "split": "calibration",
+          "image": "validation-cal-glare.jpg",
+          "visibleText": "250 g",
+          "lighting": "glare",
+          "truth": "review",
+          "sha256": "be0837ea3307ee2e177a231c7302c7abd4b04fcf8ad69801375e5d5e9f132e44",
+          "readText": "- Ff",
+          "confidence": 0,
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "threshold": 75,
+      "counts": {
+        "total": 8,
+        "falseMatches": 0,
+        "falseDifferences": 0,
+        "abstentions": 2,
+        "expectedReviews": 1,
+        "incorrectConclusionsOnObscuredText": 0
+      },
+      "cost": 2,
+      "cases": [
+        {
+          "id": "cal-clear",
+          "split": "calibration",
+          "image": "validation-cal-clear.jpg",
+          "visibleText": "250 g",
+          "truth": "match",
+          "sha256": "9a7ac9c0ec28b829405c44ebb6246dfd2fd27b1a9ff3b0412fdad5e1529441a5",
+          "readText": "250g",
+          "confidence": 88,
+          "status": "match"
+        },
+        {
+          "id": "cal-change",
+          "split": "calibration",
+          "image": "validation-cal-change.jpg",
+          "visibleText": "280 g",
+          "truth": "different",
+          "sha256": "20467d952ac7521cbab85fd91b82203e7512e4f43fd41b0f032d384f8e276e41",
+          "readText": "280 g",
+          "confidence": 92,
+          "status": "different"
+        },
+        {
+          "id": "cal-small",
+          "split": "calibration",
+          "image": "validation-cal-small.jpg",
+          "visibleText": "250 g",
+          "size": 16,
+          "truth": "match",
+          "sha256": "0bdde122fe5a78dbf748969e8ec18c80bacefa5a1c57a5f749c2c05f4857933b",
+          "readText": "250g",
+          "confidence": 75,
+          "status": "match"
+        },
+        {
+          "id": "cal-blur",
+          "split": "calibration",
+          "image": "validation-cal-blur.jpg",
+          "visibleText": "250 g",
+          "blur": 3,
+          "truth": "match",
+          "sha256": "2aae5b583681f8f7c5db29a9f4ddec5f5fb8e4d24d646ec5109ec2b150f5c851",
+          "readText": "",
+          "confidence": 0,
+          "status": "review"
+        },
+        {
+          "id": "cal-unit",
+          "split": "calibration",
+          "image": "validation-cal-unit.jpg",
+          "visibleText": "250 mg",
+          "truth": "different",
+          "sha256": "2c3e34a573ac63bd726136e94fd0d47923c1278a9571988bf31baf1d83c96389",
+          "readText": "250 mg",
+          "confidence": 95,
+          "status": "different"
+        },
+        {
+          "id": "cal-decimal",
+          "split": "calibration",
+          "image": "validation-cal-decimal.jpg",
+          "visibleText": "25.0 g",
+          "truth": "different",
+          "sha256": "f7277191fd64a4857f676adb0be934b9d89a0902e5febb3a7f0125bad5bbb931",
+          "readText": "25.0 g",
+          "confidence": 64,
+          "status": "review"
+        },
+        {
+          "id": "cal-serif",
+          "split": "calibration",
+          "image": "validation-cal-serif.jpg",
+          "visibleText": "250 g",
+          "font": "Georgia.ttf",
+          "truth": "match",
+          "sha256": "a1f099894a186eb59db7e7912cf0e920f9313672bb33605b151e7796552cd256",
+          "readText": "250 g",
+          "confidence": 80,
+          "status": "match"
+        },
+        {
+          "id": "cal-glare",
+          "split": "calibration",
+          "image": "validation-cal-glare.jpg",
+          "visibleText": "250 g",
+          "lighting": "glare",
+          "truth": "review",
+          "sha256": "be0837ea3307ee2e177a231c7302c7abd4b04fcf8ad69801375e5d5e9f132e44",
+          "readText": "- Ff",
+          "confidence": 0,
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "threshold": 90,
+      "counts": {
+        "total": 8,
+        "falseMatches": 0,
+        "falseDifferences": 0,
+        "abstentions": 5,
+        "expectedReviews": 1,
+        "incorrectConclusionsOnObscuredText": 0
+      },
+      "cost": 5,
+      "cases": [
+        {
+          "id": "cal-clear",
+          "split": "calibration",
+          "image": "validation-cal-clear.jpg",
+          "visibleText": "250 g",
+          "truth": "match",
+          "sha256": "9a7ac9c0ec28b829405c44ebb6246dfd2fd27b1a9ff3b0412fdad5e1529441a5",
+          "readText": "250g",
+          "confidence": 88,
+          "status": "review"
+        },
+        {
+          "id": "cal-change",
+          "split": "calibration",
+          "image": "validation-cal-change.jpg",
+          "visibleText": "280 g",
+          "truth": "different",
+          "sha256": "20467d952ac7521cbab85fd91b82203e7512e4f43fd41b0f032d384f8e276e41",
+          "readText": "280 g",
+          "confidence": 92,
+          "status": "different"
+        },
+        {
+          "id": "cal-small",
+          "split": "calibration",
+          "image": "validation-cal-small.jpg",
+          "visibleText": "250 g",
+          "size": 16,
+          "truth": "match",
+          "sha256": "0bdde122fe5a78dbf748969e8ec18c80bacefa5a1c57a5f749c2c05f4857933b",
+          "readText": "250g",
+          "confidence": 75,
+          "status": "review"
+        },
+        {
+          "id": "cal-blur",
+          "split": "calibration",
+          "image": "validation-cal-blur.jpg",
+          "visibleText": "250 g",
+          "blur": 3,
+          "truth": "match",
+          "sha256": "2aae5b583681f8f7c5db29a9f4ddec5f5fb8e4d24d646ec5109ec2b150f5c851",
+          "readText": "",
+          "confidence": 0,
+          "status": "review"
+        },
+        {
+          "id": "cal-unit",
+          "split": "calibration",
+          "image": "validation-cal-unit.jpg",
+          "visibleText": "250 mg",
+          "truth": "different",
+          "sha256": "2c3e34a573ac63bd726136e94fd0d47923c1278a9571988bf31baf1d83c96389",
+          "readText": "250 mg",
+          "confidence": 95,
+          "status": "different"
+        },
+        {
+          "id": "cal-decimal",
+          "split": "calibration",
+          "image": "validation-cal-decimal.jpg",
+          "visibleText": "25.0 g",
+          "truth": "different",
+          "sha256": "f7277191fd64a4857f676adb0be934b9d89a0902e5febb3a7f0125bad5bbb931",
+          "readText": "25.0 g",
+          "confidence": 64,
+          "status": "review"
+        },
+        {
+          "id": "cal-serif",
+          "split": "calibration",
+          "image": "validation-cal-serif.jpg",
+          "visibleText": "250 g",
+          "font": "Georgia.ttf",
+          "truth": "match",
+          "sha256": "a1f099894a186eb59db7e7912cf0e920f9313672bb33605b151e7796552cd256",
+          "readText": "250 g",
+          "confidence": 80,
+          "status": "review"
+        },
+        {
+          "id": "cal-glare",
+          "split": "calibration",
+          "image": "validation-cal-glare.jpg",
+          "visibleText": "250 g",
+          "lighting": "glare",
+          "truth": "review",
+          "sha256": "be0837ea3307ee2e177a231c7302c7abd4b04fcf8ad69801375e5d5e9f132e44",
+          "readText": "- Ff",
+          "confidence": 0,
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "threshold": 95,
+      "counts": {
+        "total": 8,
+        "falseMatches": 0,
+        "falseDifferences": 0,
+        "abstentions": 6,
+        "expectedReviews": 1,
+        "incorrectConclusionsOnObscuredText": 0
+      },
+      "cost": 6,
+      "cases": [
+        {
+          "id": "cal-clear",
+          "split": "calibration",
+          "image": "validation-cal-clear.jpg",
+          "visibleText": "250 g",
+          "truth": "match",
+          "sha256": "9a7ac9c0ec28b829405c44ebb6246dfd2fd27b1a9ff3b0412fdad5e1529441a5",
+          "readText": "250g",
+          "confidence": 88,
+          "status": "review"
+        },
+        {
+          "id": "cal-change",
+          "split": "calibration",
+          "image": "validation-cal-change.jpg",
+          "visibleText": "280 g",
+          "truth": "different",
+          "sha256": "20467d952ac7521cbab85fd91b82203e7512e4f43fd41b0f032d384f8e276e41",
+          "readText": "280 g",
+          "confidence": 92,
+          "status": "review"
+        },
+        {
+          "id": "cal-small",
+          "split": "calibration",
+          "image": "validation-cal-small.jpg",
+          "visibleText": "250 g",
+          "size": 16,
+          "truth": "match",
+          "sha256": "0bdde122fe5a78dbf748969e8ec18c80bacefa5a1c57a5f749c2c05f4857933b",
+          "readText": "250g",
+          "confidence": 75,
+          "status": "review"
+        },
+        {
+          "id": "cal-blur",
+          "split": "calibration",
+          "image": "validation-cal-blur.jpg",
+          "visibleText": "250 g",
+          "blur": 3,
+          "truth": "match",
+          "sha256": "2aae5b583681f8f7c5db29a9f4ddec5f5fb8e4d24d646ec5109ec2b150f5c851",
+          "readText": "",
+          "confidence": 0,
+          "status": "review"
+        },
+        {
+          "id": "cal-unit",
+          "split": "calibration",
+          "image": "validation-cal-unit.jpg",
+          "visibleText": "250 mg",
+          "truth": "different",
+          "sha256": "2c3e34a573ac63bd726136e94fd0d47923c1278a9571988bf31baf1d83c96389",
+          "readText": "250 mg",
+          "confidence": 95,
+          "status": "different"
+        },
+        {
+          "id": "cal-decimal",
+          "split": "calibration",
+          "image": "validation-cal-decimal.jpg",
+          "visibleText": "25.0 g",
+          "truth": "different",
+          "sha256": "f7277191fd64a4857f676adb0be934b9d89a0902e5febb3a7f0125bad5bbb931",
+          "readText": "25.0 g",
+          "confidence": 64,
+          "status": "review"
+        },
+        {
+          "id": "cal-serif",
+          "split": "calibration",
+          "image": "validation-cal-serif.jpg",
+          "visibleText": "250 g",
+          "font": "Georgia.ttf",
+          "truth": "match",
+          "sha256": "a1f099894a186eb59db7e7912cf0e920f9313672bb33605b151e7796552cd256",
+          "readText": "250 g",
+          "confidence": 80,
+          "status": "review"
+        },
+        {
+          "id": "cal-glare",
+          "split": "calibration",
+          "image": "validation-cal-glare.jpg",
+          "visibleText": "250 g",
+          "lighting": "glare",
+          "truth": "review",
+          "sha256": "be0837ea3307ee2e177a231c7302c7abd4b04fcf8ad69801375e5d5e9f132e44",
+          "readText": "- Ff",
+          "confidence": 0,
+          "status": "review"
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "threshold": 40,
+    "counts": {
+      "total": 8,
+      "falseMatches": 0,
+      "falseDifferences": 0,
+      "abstentions": 1,
+      "expectedReviews": 1,
+      "incorrectConclusionsOnObscuredText": 0
+    },
+    "cost": 1,
+    "cases": [
+      {
+        "id": "eval-clear",
+        "split": "evaluation",
+        "image": "validation-eval-clear.jpg",
+        "visibleText": "250g",
+        "truth": "match",
+        "sha256": "66e8d313f6ba9521f74b18ed5c9d3054c2ca90046689afa6ce49322ae3acde98",
+        "readText": "250g",
+        "confidence": 96,
+        "status": "match"
+      },
+      {
+        "id": "eval-change",
+        "split": "evaluation",
+        "image": "validation-eval-change.jpg",
+        "visibleText": "350 g",
+        "truth": "different",
+        "sha256": "51f98b7399679182c829f40d2911cafb796001ccafe759bf8bbbeec8f8a6df69",
+        "readText": "350g",
+        "confidence": 86,
+        "status": "different"
+      },
+      {
+        "id": "eval-small",
+        "split": "evaluation",
+        "image": "validation-eval-small.jpg",
+        "visibleText": "250 g",
+        "size": 19,
+        "truth": "match",
+        "sha256": "3be042896e8eaff69a0c5a2c80a0426cebb3469e053e2f60a3a0b4c2dd68d5c9",
+        "readText": "250g",
+        "confidence": 91,
+        "status": "match"
+      },
+      {
+        "id": "eval-blur-change",
+        "split": "evaluation",
+        "image": "validation-eval-blur-change.jpg",
+        "visibleText": "280 g",
+        "blur": 2,
+        "truth": "different",
+        "sha256": "e32aecf7ce67260d58fb805c7d4ffcfa83b182addf8b0ca74e59f9fcea69c596",
+        "readText": "280g",
+        "confidence": 87,
+        "status": "different"
+      },
+      {
+        "id": "eval-unit",
+        "split": "evaluation",
+        "image": "validation-eval-unit.jpg",
+        "visibleText": "250 kg",
+        "truth": "different",
+        "sha256": "3311419e27d3f374c4e37e4ae4ef374a866b3eaaf12d5099d1c3e169b5b4a1d6",
+        "readText": "250 kg",
+        "confidence": 95,
+        "status": "different"
+      },
+      {
+        "id": "eval-decimal",
+        "split": "evaluation",
+        "image": "validation-eval-decimal.jpg",
+        "visibleText": "250.0 g",
+        "truth": "different",
+        "sha256": "9c4cc5d4342bc95f0edc01c1fd5ffc72f2a24b279a3dd8bd3026c10f7ac5b98a",
+        "readText": "250.0 g",
+        "confidence": 62,
+        "status": "different"
+      },
+      {
+        "id": "eval-serif",
+        "split": "evaluation",
+        "image": "validation-eval-serif.jpg",
+        "visibleText": "250 g",
+        "font": "Georgia Bold.ttf",
+        "truth": "match",
+        "sha256": "02702eeafed68ce40d55560b75abdeb5feff6527f66a999d1e1b19475d4fe720",
+        "readText": "2503",
+        "confidence": 89,
+        "status": "review"
+      },
+      {
+        "id": "eval-glare",
+        "split": "evaluation",
+        "image": "validation-eval-glare.jpg",
+        "visibleText": "250 g",
+        "lighting": "glare",
+        "size": 28,
+        "truth": "review",
+        "sha256": "3c8ccbdfd91430c88ee427b406cb70bad1f8f5dda654eb9b370f3afcfea2e096",
+        "readText": "4",
+        "confidence": 36,
+        "status": "review"
+      }
+    ]
+  },
+  "limits": "Synthetic variants of one product in a shared layout. The held-out split is by case and is not an independent product or user study. Ground truth comes from the rendering specification and visible-image inspection. Confidence is an engine score."
+}

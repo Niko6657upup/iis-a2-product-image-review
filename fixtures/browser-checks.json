@@ -1,0 +1,300 @@
+{
+  "recordedOn": "2026-11-19",
+  "performedBy": "Codex browser walkthrough",
+  "checks": [
+    "Legacy history remained readable",
+    "Flagged text could not be accepted by checkboxes alone",
+    "Confirmed changed text could not be accepted",
+    "Manual acceptance required a reason",
+    "Unresolved saved separately",
+    "History survived reload",
+    "Changed reference cleared prior OCR and manual approval",
+    "Invalid reference returned an error and a corrected request recovered",
+    "JSON export contained the saved evidence"
+  ],
+  "records": [
+    {
+      "formatVersion": 2,
+      "id": "c6938adb-d030-4e75-8c67-e2400edabea5",
+      "at": "2026-11-19T15:28:01.321Z",
+      "candidate": "B",
+      "outcome": "Returned for revision",
+      "reference": "250 g",
+      "originalRegions": {
+        "weight": {
+          "x": 377,
+          "y": 499,
+          "width": 206,
+          "height": 61
+        },
+        "mark": {
+          "x": 421,
+          "y": 243,
+          "width": 118,
+          "height": 90
+        }
+      },
+      "candidateRegions": {
+        "weight": {
+          "x": 377,
+          "y": 499,
+          "width": 206,
+          "height": 61
+        },
+        "mark": {
+          "x": 421,
+          "y": 243,
+          "width": 118,
+          "height": 90
+        }
+      },
+      "ocr": {
+        "status": "different",
+        "readText": "280 g",
+        "confidence": 92,
+        "threshold": 40
+      },
+      "attempts": [
+        {
+          "at": "2026-11-19T15:27:52.842Z",
+          "candidate": "B",
+          "region": {
+            "x": 377,
+            "y": 499,
+            "width": 206,
+            "height": 61
+          },
+          "reference": "250 g",
+          "status": "different",
+          "readText": "280 g",
+          "confidence": 92,
+          "threshold": 40
+        }
+      ],
+      "manualReview": {
+        "finding": "changed",
+        "reason": "The candidate says 280 g; the original says 250 g."
+      },
+      "confirmed": [],
+      "saved": true
+    },
+    {
+      "formatVersion": 2,
+      "id": "ed2ceeef-85dd-4f1a-9af2-15d73f1509af",
+      "at": "2026-11-19T15:28:14.205Z",
+      "candidate": "C",
+      "outcome": "Unresolved",
+      "reference": "250 g",
+      "originalRegions": {
+        "weight": {
+          "x": 377,
+          "y": 499,
+          "width": 206,
+          "height": 61
+        },
+        "mark": {
+          "x": 421,
+          "y": 243,
+          "width": 118,
+          "height": 90
+        }
+      },
+      "candidateRegions": {
+        "weight": {
+          "x": 399,
+          "y": 501,
+          "width": 165,
+          "height": 55
+        },
+        "mark": {
+          "x": 421,
+          "y": 243,
+          "width": 118,
+          "height": 90
+        }
+      },
+      "ocr": {
+        "status": "review",
+        "readText": "",
+        "confidence": 0,
+        "threshold": 40
+      },
+      "attempts": [
+        {
+          "at": "2026-11-19T15:28:01.835Z",
+          "candidate": "C",
+          "region": {
+            "x": 377,
+            "y": 499,
+            "width": 206,
+            "height": 61
+          },
+          "reference": "250 g",
+          "status": "review",
+          "readText": "- Ff",
+          "confidence": 0,
+          "threshold": 40
+        },
+        {
+          "at": "2026-11-19T15:28:13.755Z",
+          "candidate": "C",
+          "region": {
+            "x": 399,
+            "y": 501,
+            "width": 165,
+            "height": 55
+          },
+          "reference": "250 g",
+          "status": "review",
+          "readText": "",
+          "confidence": 0,
+          "threshold": 40
+        }
+      ],
+      "manualReview": {
+        "finding": "unreadable",
+        "reason": "The tighter crop still gives no text. Glare prevents verification."
+      },
+      "confirmed": [],
+      "saved": true
+    },
+    {
+      "formatVersion": 2,
+      "id": "fcf4fbcc-4a5a-4f91-bd89-40414ba88df1",
+      "at": "2026-11-19T15:28:27.539Z",
+      "candidate": "G",
+      "outcome": "Accepted",
+      "reference": "250 g",
+      "originalRegions": {
+        "weight": {
+          "x": 377,
+          "y": 499,
+          "width": 206,
+          "height": 61
+        },
+        "mark": {
+          "x": 421,
+          "y": 243,
+          "width": 118,
+          "height": 90
+        }
+      },
+      "candidateRegions": {
+        "weight": {
+          "x": 377,
+          "y": 499,
+          "width": 206,
+          "height": 61
+        },
+        "mark": {
+          "x": 421,
+          "y": 243,
+          "width": 118,
+          "height": 90
+        }
+      },
+      "ocr": {
+        "status": "review",
+        "readText": "2503",
+        "confidence": 89,
+        "threshold": 40
+      },
+      "attempts": [
+        {
+          "at": "2026-11-19T15:28:15.459Z",
+          "candidate": "G",
+          "region": {
+            "x": 377,
+            "y": 499,
+            "width": 206,
+            "height": 61
+          },
+          "reference": "250 g",
+          "status": "review",
+          "readText": "2503",
+          "confidence": 89,
+          "threshold": 40
+        }
+      ],
+      "manualReview": {
+        "finding": "verified",
+        "reason": "Both image crops show 250 g. OCR confused the unit with the digit 3."
+      },
+      "confirmed": [
+        "background",
+        "mark",
+        "weight"
+      ],
+      "saved": true
+    },
+    {
+      "formatVersion": 2,
+      "id": "1fbaa9d3-fa06-4c89-a680-c504a021d1d8",
+      "at": "2026-11-19T15:27:52.221Z",
+      "candidate": "A",
+      "outcome": "Accepted",
+      "reference": "250 g",
+      "originalRegions": {
+        "weight": {
+          "x": 377,
+          "y": 499,
+          "width": 206,
+          "height": 61
+        },
+        "mark": {
+          "x": 421,
+          "y": 243,
+          "width": 118,
+          "height": 90
+        }
+      },
+      "candidateRegions": {
+        "weight": {
+          "x": 377,
+          "y": 499,
+          "width": 206,
+          "height": 61
+        },
+        "mark": {
+          "x": 421,
+          "y": 243,
+          "width": 118,
+          "height": 90
+        }
+      },
+      "ocr": {
+        "status": "match",
+        "readText": "250g",
+        "confidence": 88,
+        "threshold": 40
+      },
+      "attempts": [
+        {
+          "at": "2026-11-19T15:27:41.940Z",
+          "candidate": "A",
+          "region": {
+            "x": 377,
+            "y": 499,
+            "width": 206,
+            "height": 61
+          },
+          "reference": "250 g",
+          "status": "match",
+          "readText": "250g",
+          "confidence": 88,
+          "threshold": 40
+        }
+      ],
+      "manualReview": {
+        "finding": "",
+        "reason": ""
+      },
+      "confirmed": [
+        "background",
+        "mark",
+        "weight"
+      ],
+      "saved": true
+    }
+  ]
+}

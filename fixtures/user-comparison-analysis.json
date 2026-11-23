@@ -1,0 +1,260 @@
+{
+  "source": "user-comparison.json",
+  "analysisType": "Descriptive comparison; no causal or population-level significance claim.",
+  "peers": {
+    "preview": {
+      "participants": 4,
+      "tasks": 12,
+      "totalSeconds": 444,
+      "meanSeconds": 37,
+      "medianSeconds": 35.0,
+      "cases": {
+        "A": {
+          "n": 4,
+          "decisions": {
+            "accept": 4,
+            "return": 0,
+            "unresolved": 0
+          },
+          "meanSeconds": 32,
+          "medianSeconds": 32.0
+        },
+        "B": {
+          "n": 4,
+          "decisions": {
+            "accept": 2,
+            "return": 2,
+            "unresolved": 0
+          },
+          "meanSeconds": 45,
+          "medianSeconds": 45.5
+        },
+        "C": {
+          "n": 4,
+          "decisions": {
+            "accept": 0,
+            "return": 1,
+            "unresolved": 3
+          },
+          "meanSeconds": 34,
+          "medianSeconds": 33.5
+        }
+      }
+    },
+    "prototype": {
+      "participants": 4,
+      "tasks": 12,
+      "totalSeconds": 719,
+      "meanSeconds": 59.916667,
+      "medianSeconds": 62.0,
+      "cases": {
+        "A": {
+          "n": 4,
+          "decisions": {
+            "accept": 4,
+            "return": 0,
+            "unresolved": 0
+          },
+          "meanSeconds": 50.25,
+          "medianSeconds": 50.5
+        },
+        "B": {
+          "n": 4,
+          "decisions": {
+            "accept": 0,
+            "return": 4,
+            "unresolved": 0
+          },
+          "meanSeconds": 62.25,
+          "medianSeconds": 62.0
+        },
+        "C": {
+          "n": 4,
+          "decisions": {
+            "accept": 0,
+            "return": 0,
+            "unresolved": 4
+          },
+          "meanSeconds": 67.25,
+          "medianSeconds": 67.0
+        }
+      }
+    },
+    "meanExtraSeconds": 22.916667,
+    "meanTimeIncreasePercent": 61.936937,
+    "medianPairedExtraSeconds": 20.5
+  },
+  "developer": {
+    "preview": {
+      "participants": 1,
+      "tasks": 3,
+      "totalSeconds": 100,
+      "meanSeconds": 33.333333,
+      "medianSeconds": 32,
+      "cases": {
+        "A": {
+          "n": 1,
+          "decisions": {
+            "accept": 1,
+            "return": 0,
+            "unresolved": 0
+          },
+          "meanSeconds": 32,
+          "medianSeconds": 32
+        },
+        "B": {
+          "n": 1,
+          "decisions": {
+            "accept": 0,
+            "return": 1,
+            "unresolved": 0
+          },
+          "meanSeconds": 41,
+          "medianSeconds": 41
+        },
+        "C": {
+          "n": 1,
+          "decisions": {
+            "accept": 0,
+            "return": 0,
+            "unresolved": 1
+          },
+          "meanSeconds": 27,
+          "medianSeconds": 27
+        }
+      }
+    },
+    "prototype": {
+      "participants": 1,
+      "tasks": 3,
+      "totalSeconds": 165,
+      "meanSeconds": 55,
+      "medianSeconds": 55,
+      "cases": {
+        "A": {
+          "n": 1,
+          "decisions": {
+            "accept": 1,
+            "return": 0,
+            "unresolved": 0
+          },
+          "meanSeconds": 48,
+          "medianSeconds": 48
+        },
+        "B": {
+          "n": 1,
+          "decisions": {
+            "accept": 0,
+            "return": 1,
+            "unresolved": 0
+          },
+          "meanSeconds": 55,
+          "medianSeconds": 55
+        },
+        "C": {
+          "n": 1,
+          "decisions": {
+            "accept": 0,
+            "return": 0,
+            "unresolved": 1
+          },
+          "meanSeconds": 62,
+          "medianSeconds": 62
+        }
+      }
+    },
+    "meanExtraSeconds": 21.666667,
+    "meanTimeIncreasePercent": 65.0,
+    "medianPairedExtraSeconds": 16
+  },
+  "allFive": {
+    "preview": {
+      "participants": 5,
+      "tasks": 15,
+      "totalSeconds": 544,
+      "meanSeconds": 36.266667,
+      "medianSeconds": 34,
+      "cases": {
+        "A": {
+          "n": 5,
+          "decisions": {
+            "accept": 5,
+            "return": 0,
+            "unresolved": 0
+          },
+          "meanSeconds": 32,
+          "medianSeconds": 32
+        },
+        "B": {
+          "n": 5,
+          "decisions": {
+            "accept": 2,
+            "return": 3,
+            "unresolved": 0
+          },
+          "meanSeconds": 44.2,
+          "medianSeconds": 44
+        },
+        "C": {
+          "n": 5,
+          "decisions": {
+            "accept": 0,
+            "return": 1,
+            "unresolved": 4
+          },
+          "meanSeconds": 32.6,
+          "medianSeconds": 33
+        }
+      }
+    },
+    "prototype": {
+      "participants": 5,
+      "tasks": 15,
+      "totalSeconds": 884,
+      "meanSeconds": 58.933333,
+      "medianSeconds": 61,
+      "cases": {
+        "A": {
+          "n": 5,
+          "decisions": {
+            "accept": 5,
+            "return": 0,
+            "unresolved": 0
+          },
+          "meanSeconds": 49.8,
+          "medianSeconds": 50
+        },
+        "B": {
+          "n": 5,
+          "decisions": {
+            "accept": 0,
+            "return": 5,
+            "unresolved": 0
+          },
+          "meanSeconds": 60.8,
+          "medianSeconds": 61
+        },
+        "C": {
+          "n": 5,
+          "decisions": {
+            "accept": 0,
+            "return": 0,
+            "unresolved": 5
+          },
+          "meanSeconds": 66.2,
+          "medianSeconds": 66
+        }
+      }
+    },
+    "meanExtraSeconds": 22.666667,
+    "meanTimeIncreasePercent": 62.5,
+    "medianPairedExtraSeconds": 20
+  },
+  "interpretation": {
+    "missedViolation": "Acceptance of B, which changes the printed amount.",
+    "intactCase": "A is preserved; returns or alteration claims on A can be assessed as false alarms.",
+    "obscuredCase": "C is handled separately. Return for revision is not automatically a false alarm; report the decision and its stated reason.",
+    "workload": "All four peers described greater prototype effort; this is qualitative feedback, not a scale score.",
+    "independence": "Each person repeated the same three images across conditions. Twelve peer tasks per condition are not twelve independent participants."
+  }
+}

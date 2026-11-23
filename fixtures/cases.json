@@ -1,0 +1,93 @@
+{
+  "original": "original.jpg",
+  "dimensions": [
+    960,
+    720
+  ],
+  "referenceText": "250 g",
+  "textRegion": {
+    "x": 377,
+    "y": 499,
+    "width": 206,
+    "height": 61
+  },
+  "markRegion": {
+    "x": 421,
+    "y": 243,
+    "width": 118,
+    "height": 90
+  },
+  "candidates": [
+    {
+      "id": "A",
+      "image": "candidate-a.jpg",
+      "background": "slate",
+      "label": "250 g",
+      "mark": "mountain",
+      "lighting": "standard",
+      "expectedOcr": "match",
+      "manualNotes": "Background changed. Wording, mark and silhouette are preserved."
+    },
+    {
+      "id": "B",
+      "image": "candidate-b.jpg",
+      "background": "slate",
+      "label": "280 g",
+      "mark": "mountain",
+      "lighting": "standard",
+      "expectedOcr": "different",
+      "manualNotes": "Background changed. The net weight is wrong."
+    },
+    {
+      "id": "C",
+      "image": "candidate-c.jpg",
+      "background": "slate",
+      "label": "250 g",
+      "mark": "mountain",
+      "lighting": "glare",
+      "expectedOcr": "review",
+      "manualNotes": "Background changed. A reflection covers the text, so the visible image cannot confirm the net weight."
+    },
+    {
+      "id": "D",
+      "image": "candidate-d.jpg",
+      "background": "slate",
+      "label": "250 g",
+      "mark": "mountain",
+      "lighting": "warm",
+      "expectedOcr": "match",
+      "manualNotes": "Background changed. Warmer lighting is allowed and protected details are preserved."
+    },
+    {
+      "id": "E",
+      "image": "candidate-e.jpg",
+      "background": "slate",
+      "label": "250 g",
+      "mark": "leaf",
+      "lighting": "standard",
+      "expectedOcr": "match",
+      "manualNotes": "Background changed. The text is preserved, but the mark was replaced."
+    },
+    {
+      "id": "F",
+      "image": "original.jpg",
+      "background": "studio",
+      "label": "250 g",
+      "mark": "mountain",
+      "lighting": "standard",
+      "expectedOcr": "match",
+      "manualNotes": "The original is replayed as a control. The protected features are preserved, but the requested edit was not made."
+    },
+    {
+      "id": "G",
+      "image": "validation-eval-serif.jpg",
+      "background": "slate",
+      "label": "250 g",
+      "mark": "mountain",
+      "lighting": "standard",
+      "font": "Georgia Bold.ttf",
+      "expectedOcr": "review",
+      "manualNotes": "The weight is preserved in a different font. OCR misreads it as 2503 with confidence 89, so the format check requests manual review."
+    }
+  ]
+}

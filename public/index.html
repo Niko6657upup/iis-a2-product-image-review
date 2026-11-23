@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Check protected product details after a background edit.">
+  <title>Product Image Review</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/review.js" type="module"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="page">
+      <span class="app-mark" aria-hidden="true"></span>
+      <span>Product Image Review</span>
+    </div>
+  </header>
+  <main class="page">
+    <div class="intro">
+      <div>
+        <h1>Review a background edit</h1>
+        <p>Replace the studio background with blue-grey while preserving the product.</p>
+      </div>
+      <form id="candidate-form" class="candidate-form">
+        <label for="candidate">Prepared edit</label>
+        <div class="inline">
+          <select id="candidate" name="candidate" required></select>
+          <button id="load-candidate" type="submit" class="primary" disabled>Load candidate</button>
+        </div>
+      </form>
+    </div>
+
+    <p id="load-error" class="error" role="alert" hidden></p>
+    <div class="workspace">
+      <section class="image-workspace" aria-label="Image comparison">
+        <fieldset class="detail-picker">
+          <legend>Protected detail</legend>
+          <label><input type="radio" name="detail" value="weight" checked> Net weight</label>
+          <label><input type="radio" name="detail" value="mark"> Brand mark</label>
+        </fieldset>
+        <p id="region-help" class="hint">Draw a box on the original to mark a detail. Adjust the box on the candidate if needed.</p>
+        <div class="comparison">
+          <figure class="panel image-card">
+            <figcaption><h2>Original</h2></figcaption>
+            <div class="photo" id="original-photo">
+              <img id="original-image" alt="Original Alder Trace coffee package in a studio setting" width="960" height="720" draggable="false">
+              <div id="original-box" class="region-box" aria-hidden="true" hidden></div>
+            </div>
+          </figure>
+          <figure class="panel image-card">
+            <figcaption><h2 id="candidate-title">Candidate</h2></figcaption>
+            <div class="photo candidate-photo" id="candidate-photo">
+              <p id="candidate-placeholder">Load a prepared edit to compare.</p>
+              <img id="candidate-image" alt="" width="960" height="720" draggable="false" hidden>
+              <div id="candidate-box" class="region-box" aria-hidden="true" hidden></div>
+            </div>
+          </figure>
+        </div>
+        <details class="panel coordinate-panel">
+          <summary>Edit crop coordinates</summary>
+          <form id="coordinate-form">
+            <label>Image <select id="coordinate-side"><option value="original">Original</option><option value="candidate">Candidate</option></select></label>
+            <label>Left <input id="region-x" type="number" min="0" step="1" required></label>
+            <label>Top <input id="region-y" type="number" min="0" step="1" required></label>
+            <label>Width <input id="region-width" type="number" min="8" step="1" required></label>
+            <label>Height <input id="region-height" type="number" min="8" step="1" required></label>
+            <button id="apply-coordinates" type="submit">Apply crop</button>
+          </form>
+          <p id="coordinate-error" class="hint error" role="alert" hidden></p>
+        </details>
+      </section>
+
+      <aside class="review-column" aria-label="Review tools">
+        <section class="panel evidence">
+          <h2 id="detail-title">Net weight evidence</h2>
+          <div class="crop-grid">
+            <figure>
+              <figcaption>Original</figcaption>
+              <div class="crop-preview"><canvas id="original-crop" width="268" height="156" aria-label="Selected detail in original image"></canvas></div>
+            </figure>
+            <figure>
+              <figcaption>Candidate</figcaption>
+              <div class="crop-preview"><canvas id="candidate-crop" width="268" height="156" aria-label="Selected detail in candidate image"></canvas></div>
+            </figure>
+          </div>
+          <div id="weight-tools">
+            <label for="reference">Expected net weight</label>
+            <div class="inline">
+              <input id="reference" type="text" maxlength="40" spellcheck="false" autocomplete="off">
+              <button id="check-weight" type="button" disabled>Check text</button>
+            </div>
+            <div id="ocr-feedback" class="feedback" role="status" aria-live="polite">
+              <strong id="ocr-status">Awaiting candidate</strong>
+              <p id="ocr-reading" class="hint">Check the candidate crop against the expected value.</p>
+            </div>
+          </div>
+          <p id="mark-tools" class="hint" hidden>Compare the brand mark in these crops and the package shape in the full images.</p>
+        </section>
+
+        <section class="panel decision-panel">
+          <fieldset id="manual-review" hidden>
+            <legend>Resolve the text check</legend>
+            <label for="manual-finding">What can you verify from the image?</label>
+            <select id="manual-finding">
+              <option value="">Choose a finding</option>
+              <option value="verified">Text matches (OCR error)</option>
+              <option value="changed">Text has changed</option>
+              <option value="unreadable">Text is unreadable</option>
+            </select>
+          </fieldset>
+          <label for="review-note" class="note-label">Review reason</label>
+          <textarea id="review-note" rows="2" maxlength="500" disabled placeholder="Explain a manual correction or why this needs revision."></textarea>
+          <p id="review-requirement" class="hint" hidden>Accepting a flagged label requires a verified reading and a reason of at least 8 characters.</p>
+          <fieldset id="manual-checks" disabled>
+            <legend>Confirm before accepting</legend>
+            <label><input id="background-check" type="checkbox"> Background matches the requested edit</label>
+            <label><input id="mark-check" type="checkbox"> Brand mark and shape are preserved</label>
+            <label><input id="weight-check" type="checkbox"> Net weight is visually verified</label>
+          </fieldset>
+          <div class="decision-actions">
+            <button id="accept" type="button" class="primary" disabled>Accept</button>
+            <button id="return" type="button" disabled>Return for revision</button>
+            <button id="unresolved" type="button" disabled>Save unresolved</button>
+          </div>
+          <p id="decision-status" class="hint" role="status">Load a candidate to begin the review.</p>
+          <p id="latest-decision" class="hint" hidden></p>
+        </section>
+      </aside>
+    </div>
+    <section class="panel history-panel" aria-labelledby="history-title">
+      <div class="history-header">
+        <div><h2 id="history-title">Review history</h2><p class="hint">The latest 20 decisions in this browser.</p></div>
+        <button id="export-history" type="button" disabled>Export history</button>
+      </div>
+      <p id="history-message" class="hint" role="status">No decisions recorded yet.</p>
+      <ol id="history-list"></ol>
+    </section>
+  </main>
+</body>
+</html>

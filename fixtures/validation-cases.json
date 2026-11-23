@@ -1,0 +1,24 @@
+{
+  "reference": "250 g",
+  "region": {"x": 377, "y": 499, "width": 206, "height": 61},
+  "protocol": "The split and threshold grid were specified before running this expansion. Choose the lowest calibration cost. False matches cost 5, false differences cost 2 and abstention on readable text costs 1. Ties retain the earlier threshold of 75 when possible, then prefer the lower threshold. Apply the chosen threshold to held-out cases without retuning.",
+  "thresholds": [40, 60, 75, 90, 95],
+  "cases": [
+    {"id": "cal-clear", "split": "calibration", "image": "validation-cal-clear.jpg", "visibleText": "250 g", "truth": "match"},
+    {"id": "cal-change", "split": "calibration", "image": "validation-cal-change.jpg", "visibleText": "280 g", "truth": "different"},
+    {"id": "cal-small", "split": "calibration", "image": "validation-cal-small.jpg", "visibleText": "250 g", "size": 16, "truth": "match"},
+    {"id": "cal-blur", "split": "calibration", "image": "validation-cal-blur.jpg", "visibleText": "250 g", "blur": 3, "truth": "match"},
+    {"id": "cal-unit", "split": "calibration", "image": "validation-cal-unit.jpg", "visibleText": "250 mg", "truth": "different"},
+    {"id": "cal-decimal", "split": "calibration", "image": "validation-cal-decimal.jpg", "visibleText": "25.0 g", "truth": "different"},
+    {"id": "cal-serif", "split": "calibration", "image": "validation-cal-serif.jpg", "visibleText": "250 g", "font": "Georgia.ttf", "truth": "match"},
+    {"id": "cal-glare", "split": "calibration", "image": "validation-cal-glare.jpg", "visibleText": "250 g", "lighting": "glare", "truth": "review"},
+    {"id": "eval-clear", "split": "evaluation", "image": "validation-eval-clear.jpg", "visibleText": "250g", "truth": "match"},
+    {"id": "eval-change", "split": "evaluation", "image": "validation-eval-change.jpg", "visibleText": "350 g", "truth": "different"},
+    {"id": "eval-small", "split": "evaluation", "image": "validation-eval-small.jpg", "visibleText": "250 g", "size": 19, "truth": "match"},
+    {"id": "eval-blur-change", "split": "evaluation", "image": "validation-eval-blur-change.jpg", "visibleText": "280 g", "blur": 2, "truth": "different"},
+    {"id": "eval-unit", "split": "evaluation", "image": "validation-eval-unit.jpg", "visibleText": "250 kg", "truth": "different"},
+    {"id": "eval-decimal", "split": "evaluation", "image": "validation-eval-decimal.jpg", "visibleText": "250.0 g", "truth": "different"},
+    {"id": "eval-serif", "split": "evaluation", "image": "validation-eval-serif.jpg", "visibleText": "250 g", "font": "Georgia Bold.ttf", "truth": "match"},
+    {"id": "eval-glare", "split": "evaluation", "image": "validation-eval-glare.jpg", "visibleText": "250 g", "lighting": "glare", "size": 28, "truth": "review"}
+  ]
+}

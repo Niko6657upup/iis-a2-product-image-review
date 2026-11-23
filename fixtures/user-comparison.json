@@ -1,0 +1,412 @@
+{
+  "formatVersion": 1,
+  "source": {
+    "providedOn": "2026-11-23",
+    "testDate": null,
+    "origin": "Author-supplied task table and feedback; author confirms that the data came from contemporaneous records or recordings.",
+    "verification": "The supplied table was checked for completeness and arithmetic; original notes or recordings are not included.",
+    "language": "Reasons and feedback are English paraphrases of the supplied Chinese account, not verbatim participant quotations.",
+    "timingScope": "From task start to the final decision; prototype timings include region marking, OCR waiting and saving the decision."
+  },
+  "participants": [
+    {
+      "id": "P1",
+      "role": "developer"
+    },
+    {
+      "id": "P2",
+      "role": "peer"
+    },
+    {
+      "id": "P3",
+      "role": "peer"
+    },
+    {
+      "id": "P4",
+      "role": "peer"
+    },
+    {
+      "id": "P5",
+      "role": "peer"
+    }
+  ],
+  "design": {
+    "conditions": [
+      "preview",
+      "prototype"
+    ],
+    "cases": [
+      "A",
+      "B",
+      "C"
+    ],
+    "withinParticipant": true,
+    "sameImagesRepeated": true,
+    "caseOrderWithinCondition": [
+      "A",
+      "B",
+      "C"
+    ],
+    "primaryAnalysis": "P2-P5; P1 is the developer walkthrough and is summarised separately.",
+    "workloadMeasure": "Qualitative feedback only; no numerical workload scale supplied."
+  },
+  "rows": [
+    {
+      "participant": "P1",
+      "condition": "preview",
+      "case": "A",
+      "order": 1,
+      "decision": "accept",
+      "time_seconds": 32,
+      "reason": "Full images appeared to preserve the weight and brand mark; the background met the request.",
+      "assistance": "none",
+      "role": "developer"
+    },
+    {
+      "participant": "P1",
+      "condition": "preview",
+      "case": "B",
+      "order": 2,
+      "decision": "return",
+      "time_seconds": 41,
+      "reason": "The candidate changed the amount from 250 g to 280 g.",
+      "assistance": "none",
+      "role": "developer"
+    },
+    {
+      "participant": "P1",
+      "condition": "preview",
+      "case": "C",
+      "order": 3,
+      "decision": "unresolved",
+      "time_seconds": 27,
+      "reason": "Glare covered the label; the visible wording could not be verified.",
+      "assistance": "none",
+      "role": "developer"
+    },
+    {
+      "participant": "P1",
+      "condition": "prototype",
+      "case": "A",
+      "order": 4,
+      "decision": "accept",
+      "time_seconds": 48,
+      "reason": "Selected the weight crop; OCR read 250g; enlarged crops supported visual verification before acceptance.",
+      "assistance": "none",
+      "role": "developer"
+    },
+    {
+      "participant": "P1",
+      "condition": "prototype",
+      "case": "B",
+      "order": 5,
+      "decision": "return",
+      "time_seconds": 55,
+      "reason": "OCR read 280g against 250g; crops showed the changed amount and a reason was recorded.",
+      "assistance": "none",
+      "role": "developer"
+    },
+    {
+      "participant": "P1",
+      "condition": "prototype",
+      "case": "C",
+      "order": 6,
+      "decision": "unresolved",
+      "time_seconds": 62,
+      "reason": "The initial reading was unusable; a tighter crop still gave no readable text; saved unresolved.",
+      "assistance": "none",
+      "role": "developer"
+    },
+    {
+      "participant": "P2",
+      "condition": "prototype",
+      "case": "A",
+      "order": 1,
+      "decision": "accept",
+      "time_seconds": 54,
+      "reason": "Marked the label; OCR matched 250g; the enlarged view supported the preservation judgement.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P2",
+      "condition": "prototype",
+      "case": "B",
+      "order": 2,
+      "decision": "return",
+      "time_seconds": 67,
+      "reason": "The different-text warning directed attention to 280g in the crop; returned the altered amount.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P2",
+      "condition": "prototype",
+      "case": "C",
+      "order": 3,
+      "decision": "unresolved",
+      "time_seconds": 71,
+      "reason": "Glare obscured the label; two OCR attempts failed; saved unresolved.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P2",
+      "condition": "preview",
+      "case": "A",
+      "order": 4,
+      "decision": "accept",
+      "time_seconds": 36,
+      "reason": "The full images appeared unchanged apart from the background.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P2",
+      "condition": "preview",
+      "case": "B",
+      "order": 5,
+      "decision": "accept",
+      "time_seconds": 44,
+      "reason": "Focused on the background and missed the changed weight; accepted the candidate.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P2",
+      "condition": "preview",
+      "case": "C",
+      "order": 6,
+      "decision": "return",
+      "time_seconds": 39,
+      "reason": "Perceived a colour difference, suspected a label alteration and returned the candidate.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P3",
+      "condition": "preview",
+      "case": "A",
+      "order": 1,
+      "decision": "accept",
+      "time_seconds": 31,
+      "reason": "Full-image inspection revealed no obvious packaging change and the background was appropriate.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P3",
+      "condition": "preview",
+      "case": "B",
+      "order": 2,
+      "decision": "return",
+      "time_seconds": 52,
+      "reason": "Repeated comparison revealed different weight digits; returned the candidate.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P3",
+      "condition": "preview",
+      "case": "C",
+      "order": 3,
+      "decision": "unresolved",
+      "time_seconds": 33,
+      "reason": "Glare prevented reading the weight; no definite judgement was made.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P3",
+      "condition": "prototype",
+      "case": "A",
+      "order": 4,
+      "decision": "accept",
+      "time_seconds": 51,
+      "reason": "Set 250g as the reference; OCR matched; visually checked the brand and confirmed the checks.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P3",
+      "condition": "prototype",
+      "case": "B",
+      "order": 5,
+      "decision": "return",
+      "time_seconds": 63,
+      "reason": "OCR reported a difference; the crops showed 250g versus 280g; recorded the alteration.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P3",
+      "condition": "prototype",
+      "case": "C",
+      "order": 6,
+      "decision": "unresolved",
+      "time_seconds": 68,
+      "reason": "An adjusted crop still gave no usable characters; glare prevented verification.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P4",
+      "condition": "preview",
+      "case": "A",
+      "order": 1,
+      "decision": "accept",
+      "time_seconds": 28,
+      "reason": "Full-image inspection revealed no apparent packaging change; the background edit was complete.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P4",
+      "condition": "preview",
+      "case": "B",
+      "order": 2,
+      "decision": "accept",
+      "time_seconds": 37,
+      "reason": "Focused on the brand mark and overlooked the changed weight digits.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P4",
+      "condition": "preview",
+      "case": "C",
+      "order": 3,
+      "decision": "unresolved",
+      "time_seconds": 30,
+      "reason": "Glare made the wording unreadable; correctness could not be verified.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P4",
+      "condition": "prototype",
+      "case": "A",
+      "order": 4,
+      "decision": "accept",
+      "time_seconds": 46,
+      "reason": "OCR returned 250g matching the reference; inspected the crop and accepted.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P4",
+      "condition": "prototype",
+      "case": "B",
+      "order": 5,
+      "decision": "return",
+      "time_seconds": 58,
+      "reason": "The different-text warning and enlarged view revealed the changed weight.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P4",
+      "condition": "prototype",
+      "case": "C",
+      "order": 6,
+      "decision": "unresolved",
+      "time_seconds": 64,
+      "reason": "Repeated crop adjustments did not yield readable text; saved unresolved.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P5",
+      "condition": "prototype",
+      "case": "A",
+      "order": 1,
+      "decision": "accept",
+      "time_seconds": 50,
+      "reason": "Marked the weight; OCR matched; the enlarged view supported the preservation judgement.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P5",
+      "condition": "prototype",
+      "case": "B",
+      "order": 2,
+      "decision": "return",
+      "time_seconds": 61,
+      "reason": "The text-difference warning and crops revealed an altered weight.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P5",
+      "condition": "prototype",
+      "case": "C",
+      "order": 3,
+      "decision": "unresolved",
+      "time_seconds": 66,
+      "reason": "Recropping did not yield usable text through the glare; saved unresolved.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P5",
+      "condition": "preview",
+      "case": "A",
+      "order": 4,
+      "decision": "accept",
+      "time_seconds": 33,
+      "reason": "Full-image comparison revealed no visible product problem and a successful background edit.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P5",
+      "condition": "preview",
+      "case": "B",
+      "order": 5,
+      "decision": "return",
+      "time_seconds": 47,
+      "reason": "Inspection revealed changed weight digits; the image was not ready for publication.",
+      "assistance": "none",
+      "role": "peer"
+    },
+    {
+      "participant": "P5",
+      "condition": "preview",
+      "case": "C",
+      "order": 6,
+      "decision": "unresolved",
+      "time_seconds": 34,
+      "reason": "Glare hid the wording; the weight could not be verified.",
+      "assistance": "none",
+      "role": "peer"
+    }
+  ],
+  "feedback": {
+    "P1": {
+      "effort": "Prototype required more effort: region marking, reading OCR and writing reasons. Preview was faster.",
+      "detection": "Crops and OCR directed attention to weight; full images could distract from detail.",
+      "ocr": "Useful evidence, with some hesitation when noisy readings required visual checking."
+    },
+    "P2": {
+      "effort": "Prototype required more effort and more steps, including writing reasons.",
+      "detection": "Preview missed a small digit change and produced a colour-based concern. The crop directed attention to the label.",
+      "ocr": "Warnings helped direct attention to digits; glare-related failures caused confusion."
+    },
+    "P3": {
+      "effort": "Prototype involved more effort through drawing, checking output and writing reasons.",
+      "detection": "Detected B in both conditions; the prototype directed attention to marked details.",
+      "ocr": "Helpful confirmation with little hesitation."
+    },
+    "P4": {
+      "effort": "Prototype took longer and required more effort.",
+      "detection": "Missed B in preview; the OCR warning helped reveal the changed amount.",
+      "ocr": "Warnings were helpful; unresolved allowed uncertainty when recognition failed."
+    },
+    "P5": {
+      "effort": "More prototype steps required more effort than viewing two full images.",
+      "detection": "Detected problems in both conditions; crops made detail comparison easier.",
+      "ocr": "Helpful in most scenes; also inspected images rather than relying entirely on OCR."
+    }
+  }
+}
