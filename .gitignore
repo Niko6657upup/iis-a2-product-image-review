@@ -1,0 +1,7 @@
+node_modules/
+models/
+__pycache__/
+/AGENTS.md
+/A2-design-plan.md
+/W01-W04-lecture-notes.md
+/local-reference/
