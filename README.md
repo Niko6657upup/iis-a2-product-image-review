@@ -1,6 +1,6 @@
 # Product Image Review
 
-Prose word count: 1061
+Prose word count: 1045
 
 
 ## Project status
@@ -52,7 +52,7 @@ Sixteen additional cases were split in advance into eight calibration and eight 
 **Reporting and documentation refinement, 19–23 November 2026.** I refined the explanation of design choices, developed interactions and evaluation limits. The report interprets the supplied task records in terms of missed changes, time and qualitative effort, stating preliminary support for detection alongside additional review cost. The development account connects the initial version, the manual-review and testing expansion, and continuing smaller refinements. Word counts, figures, references and layout were checked against the current report.
 
 
-**Method clarification and report revision, 24 November 2026.** I specified the preview with browser zoom, common equipment and task instructions, and the prototype demonstration and practice. I explained retaining manual marking for user-defined preservation priorities, with drawing effort and selection-error costs. The comparison increased my confidence in deliberate checking; it did not isolate marking from OCR. Templates, reviewed automatic suggestions and a three-condition follow-up are planned. The [comparison record](fixtures/user-comparison-notes.md) gives the detailed account. Codex helped condense the supplied explanation and check consistency, word counts, figures and links.
+**Method clarification and report revision, 24 November 2026.** I specified the preview with browser zoom, common equipment and task instructions, and the prototype demonstration and practice. I explained retaining manual marking for user-defined preservation priorities, with drawing effort and selection-error costs. The comparison increased my confidence in deliberate checking; it did not isolate marking from OCR. Templates, reviewed automatic suggestions and a three-condition follow-up are planned. The [comparison record](fixtures/user-comparison-notes.md) gives the detailed account. 
 
 ## AI assistance
 
