@@ -2,11 +2,23 @@
 
 ## Source and scope
 
-The author supplied 30 task rows and qualitative feedback on 23 November 2026, then confirmed that they came from contemporaneous records or recordings. The original notes or recordings are not included in this repository. The test date was not supplied. The [transcribed records](user-comparison.json) preserve decisions, reasons, order, times and assistance. English reasons and feedback are paraphrases of the supplied Chinese account, not verbatim quotations. This source statement supersedes the earlier report that no task-level records were available.
+The author supplied 30 task rows and qualitative feedback on 23 November 2026, then confirmed that they came from contemporaneous records or recordings. The original notes or recordings are not included in this repository. The test date was not supplied. The author clarified equipment, preview and preparation procedures on 24 November 2026. The [transcribed records](user-comparison.json) preserve decisions, reasons, order, times and assistance. English reasons and feedback are paraphrases of the supplied Chinese account, not verbatim quotations. This source statement supersedes the earlier report that no task-level records were available.
 
-Five people took part: P1 is the developer and P2–P5 are classmates. Each person completed A, B and C under ordinary before-and-after preview and the prototype, giving six tasks per person. P1, P3 and P4 used preview first; P2 and P5 used the prototype first. Case order was A, B, C in every block, and the same images were repeated between conditions. Among peers, condition order was balanced two to two. All rows report no assistance. No further details of the preview display, training or prior familiarity were supplied.
+Five people took part: P1 is the developer and P2–P5 are classmates. Each person completed A, B and C under ordinary before-and-after preview and the prototype, giving six tasks per person. P1, P3 and P4 used preview first; P2 and P5 used the prototype first. Case order was A, B, C in every block, and the same images were repeated between conditions. Among peers, condition order was balanced two to two. All rows report no assistance during the timed tasks. A demonstration and practice preceded formal prototype tasks, as described below.
 
 Timing ran from task start to the final decision. Prototype timings include region marking, OCR waiting and saving. The prototype replayed the background edit with prepared images; its OCR and review controls were live. Workload feedback was qualitative, with no numerical scale. The main descriptive analysis uses the four peers and reports the developer separately.
+
+## Equipment, instructions and familiarisation
+
+Both conditions used the same computer, browser, screen, resolution and mouse input, according to the author. The precise device specifications and browser version were not supplied. This standardised equipment; it does not remove learning, familiarity or other study effects.
+
+Ordinary preview displayed the original and candidate side by side. It allowed native browser zoom using the mouse wheel, without predefined crop boxes, OCR or difference prompts. The prototype added manual region selection, corresponding enlarged crops, OCR evidence, review controls and saved decisions.
+
+The author supplied the following common task wording. This is an English translation of the supplied Chinese wording:
+
+> Check whether the product image after a background change is acceptable. Only the background may change; the net weight, mark and packaging details must be preserved. Choose accept, return for revision or unresolved, and explain the reason.
+
+Before formal prototype tasks, the author gave a brief demonstration of marking protected regions, viewing enlarged crops, reading OCR output and submitting a decision. Participants practised once on a simple image unrelated to A, B or C. Ordinary preview had no separate demonstration because the author described participants as familiar with that viewing method. Preparation preceded the formal timed tasks. The unequal familiarisation remains relevant when interpreting time and workload.
 
 ## Decision results
 
@@ -39,9 +51,17 @@ For peers, the mean increase was 22.9 seconds per task, or 61.9%. Across all fiv
 
 All four peers described the prototype as more effortful because it added region selection, reading recognition output and writing reasons. Their accounts described enlarged crops and OCR warnings as drawing attention to the weight label. P2 described confusion when glare prevented OCR; P4 valued the unresolved option. These are paraphrased accounts, not measured workload scores or evidence that every participant interpreted every warning correctly.
 
-In these supplied tasks, the prototype was associated with fewer B misses and longer task times, with reported extra effort. This is exploratory evidence consistent with the proposed tradeoff between targeted verification and review cost. Four peers, one changed-label image, repeated stimuli, fixed within-block case order and developer involvement restrict causal and general conclusions. The observations do not establish performance across products or separate the effects of cropping, OCR and confirmation steps.
+In these supplied tasks, the prototype was associated with fewer B misses and longer task times, with reported extra effort. This is exploratory evidence consistent with the proposed tradeoff between targeted verification and review cost. Four peers, one changed-label image, repeated stimuli, fixed within-block case order and developer involvement restrict causal and general conclusions. The observations do not establish performance across products or separate the effects of manual selection, cropping, OCR and confirmation steps. Prototype practice and prior familiarity with preview also constrain the comparison.
 
 Further evaluation should use new product images, independently verify intended alterations, vary task order and measure workload systematically. Optional region suggestions could be investigated to reduce interaction cost while retaining visual verification.
+
+## Author reflection and planned refinements
+
+The author retained manual marking so the reviewer defines which details must be preserved. Variable package layouts motivated concern that automatic localisation could miss important wording or select unrelated regions. These are design considerations, not results of testing automatic localisation. Expected benefits are control, flexible selection and focused inspection; drawing time, repetition, fatigue and inaccurate or incomplete selections are costs. The current evaluation covers one synthetic product and does not establish transfer to diverse packaging or an OCR noise reduction benefit.
+
+The author had been uncertain whether marking would provide useful support. The preview misses by P2 and P4, followed by no B misses under the prototype, increased confidence in retaining deliberate checking. This is a reflection on the supplied comparison; it does not establish a separate causal effect of marking. The time and qualitative effort findings remain part of that judgement.
+
+Proposed refinements are reusable region templates for similar products and optional automatic suggestions that users check and adjust. The developed prototype already retains full images alongside crops; a faster switch between views is a proposal. Templates, automatic localisation and the proposed switching control are not implemented or evaluated. A planned follow-up would compare ordinary preview, automatic region suggestions and manual selection on new, independently annotated product images, measuring misses, task time and workload. Matching other assistance across the two region-selection conditions would help isolate selection effects.
 
 ## Reproducing the calculations
 

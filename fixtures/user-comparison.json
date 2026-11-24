@@ -6,7 +6,9 @@
     "origin": "Author-supplied task table and feedback; author confirms that the data came from contemporaneous records or recordings.",
     "verification": "The supplied table was checked for completeness and arithmetic; original notes or recordings are not included.",
     "language": "Reasons and feedback are English paraphrases of the supplied Chinese account, not verbatim participant quotations.",
-    "timingScope": "From task start to the final decision; prototype timings include region marking, OCR waiting and saving the decision."
+    "timingScope": "From task start to the final decision; prototype timings include region marking, OCR waiting and saving the decision.",
+    "methodClarificationProvidedOn": "2026-11-24",
+    "methodClarificationOrigin": "Additional account supplied by the author; not an independent reconstruction from the original recordings."
   },
   "participants": [
     {
@@ -48,7 +50,29 @@
       "C"
     ],
     "primaryAnalysis": "P2-P5; P1 is the developer walkthrough and is summarised separately.",
-    "workloadMeasure": "Qualitative feedback only; no numerical workload scale supplied."
+    "workloadMeasure": "Qualitative feedback only; no numerical workload scale supplied.",
+    "equipment": {
+      "sameComputerBrowserScreenResolutionAndMouse": true,
+      "scope": "Reported by the author; exact hardware, resolution and browser version were not supplied."
+    },
+    "preview": {
+      "display": "Original and candidate shown side by side.",
+      "zoom": "Native browser zoom using the mouse wheel, according to the author.",
+      "predefinedCrops": false,
+      "ocr": false,
+      "differencePrompts": false
+    },
+    "sharedTaskInstructions": {
+      "scope": "The same instruction wording was supplied for both conditions.",
+      "englishTranslation": "Check whether the product image after a background change is acceptable. Only the background may change; the net weight, mark and packaging details must be preserved. Choose accept, return for revision or unresolved, and explain the reason.",
+      "languageNote": "English translation of the instruction wording supplied in Chinese by the author."
+    },
+    "familiarisation": {
+      "prototype": "A brief demonstration of region selection, enlarged crops, OCR output and decision submission, followed by one unrelated practice image before formal tasks.",
+      "preview": "No separate demonstration; the author described participants as familiar with ordinary image viewing.",
+      "practiceBeforeTimedTasks": true,
+      "limitation": "Familiarisation was not identical across conditions."
+    }
   },
   "rows": [
     {
