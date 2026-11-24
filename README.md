@@ -1,6 +1,6 @@
 # Product Image Review
 
-Prose word count: 959
+Prose word count: 1011
 
 ## Project status
 
@@ -36,19 +36,21 @@ The interface uses HTML, CSS and browser JavaScript. A local Node.js server vali
 
 ## Development record
 
-**Fixtures and OCR, 16 November 2026.** I selected prepared edit replay with live OCR for the first version. The prototype uses Tesseract.js for local text recognition. Readings of 250g and low-confidence glare characters motivated spacing normalisation and manual review. The initial six cases and crop correction passed.
+**Initial prototype, 16 November 2026.** I selected prepared edit replay with live OCR for the first version. The prototype uses Tesseract.js for local text recognition. Readings of 250g and low-confidence glare characters motivated spacing normalisation and manual review. The initial six cases and crop correction passed.
 
-**Browser workflow, 16 November 2026.** Separate confirmations were added because matching text can accompany a changed mark or an unchanged background. Checks covered A–F, region selection, crop correction, invalid bounds, stale-result clearing, stored decisions, concurrent requests and recovery.
+**Workflow refinement, 16–23 November 2026.** Separate confirmations were added because matching text can accompany a changed mark or an unchanged background. Early checks covered A–F, region selection, crop correction, invalid bounds, stale-result clearing, stored decisions, concurrent requests and recovery. I continued making small refinements to the prototype and its supporting documentation through 23 November.
 
-**Interaction evidence, 16 November 2026.** Nine browser states documented A–C. A tighter crop on glare returned no text. The system diagram was checked against the implementation. Updated storyboards show the current decisions using selected browser captures.
+**Interaction evidence, 16–19 November 2026.** Initial browser captures documented A–C. The storyboards and system diagram were revised alongside the later manual-review and history changes. A tighter crop on glare returned no text. The updated figures show the developed decisions using selected browser captures.
 
 **Manual review and validation, 19 November 2026.** I requested explicit manual review, expanded tests and inspectable history. Previously, checkboxes alone could accept a flagged result. A manual correction now needs a finding and reason; unresolved is a separate outcome. Browser checks verified these guards, changed references, error recovery, reload persistence, legacy history and JSON export. [Walkthrough records](fixtures/browser-checks.json) preserve actual decisions. [Manual correction and history](figures/manual-review-history.png) show the corresponding interface.
 
 Sixteen additional cases were split in advance into eight calibration and eight evaluation cases. The recorded cost rule selected a provisional confidence threshold of 40, replacing 75. The evaluation split produced zero false matches, zero false differences and two manual-review outcomes. One readable serif label was misread as 2503 with confidence 89; the format guard requested review. These cases share one synthetic product and layout. The [validation notes](fixtures/validation-notes.md) give the protocol and limits.
 
-**Personal walkthrough and comparison.** I supplied records for five people: myself and four classmates, each completing A–C in both conditions. The main analysis separates my developer walkthrough. Among peers, B misses were 2/4 with preview and 0/4 with the prototype; mean task time rose from 37.0 to 59.9 seconds. All four described greater effort. C’s colour-based return is reported separately from false alarms on intact A. Repeated images and four peers limit the conclusions. The [comparison record](fixtures/user-comparison-notes.md) links the supplied tasks, feedback, calculations and source statement.
+**Comparison analysis documented, 23 November 2026.** I supplied records for five people: myself and four classmates, each completing A–C in both conditions. The main analysis separates my developer walkthrough. Among peers, B misses were 2/4 with preview and 0/4 with the prototype; mean task time rose from 37.0 to 59.9 seconds. All four described greater effort. C’s colour-based return is reported separately from false alarms on intact A. Repeated images and four peers limit the conclusions. The [comparison record](fixtures/user-comparison-notes.md) links the supplied tasks, feedback, calculations and source statement. This entry dates the analysis; the study date was not supplied.
 
-**Documentation revision, 23 November 2026.** At my request, the reports now name the relevant concepts without week or lecture labels and describe the chosen OCR implementation directly. The development account foregrounds my project scope and requested improvements, while retaining specific AI assistance and check provenance. The report now has 1097 words of main text and an abstract of 166 words, counted separately. A dedicated section interprets the supplied task records in terms of missed changes, time and qualitative effort, stating preliminary support for detection alongside additional review cost. Repository, README and version fields are ready for the submission links. Word counts, figures, references and layout were checked.
+**Reporting and documentation refinement, 19–23 November 2026.** I refined the explanation of design choices, developed interactions and evaluation limits. The report interprets the supplied task records in terms of missed changes, time and qualitative effort, stating preliminary support for detection alongside additional review cost. The development account connects the initial version, the manual-review and testing expansion, and continuing smaller refinements. Word counts, figures, references and layout were checked against the current report.
+
+**Public repository check, 23 November 2026.** The [first complete public snapshot](https://github.com/Niko6657upup/iis-a2-product-image-review/commit/3c429ef297ac010c985639152c073fc91f2e8370) contains all 51 intended files. Their contents matched the upload package, and all 30 relative Markdown file links had corresponding targets. The original OCR and browser-check records retain their recorded dates. This subsequent documentation revision clarifies the development timeline and reporting.
 
 ## AI assistance
 
