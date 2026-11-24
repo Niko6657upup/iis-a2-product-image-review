@@ -50,11 +50,10 @@ Sixteen additional cases were split in advance into eight calibration and eight 
 
 **Reporting and documentation refinement, 19–23 November 2026.** I refined the explanation of design choices, developed interactions and evaluation limits. The report interprets the supplied task records in terms of missed changes, time and qualitative effort, stating preliminary support for detection alongside additional review cost. The development account connects the initial version, the manual-review and testing expansion, and continuing smaller refinements. Word counts, figures, references and layout were checked against the current report.
 
-**Public repository check, 23 November 2026.** The [first complete public snapshot](https://github.com/Niko6657upup/iis-a2-product-image-review/commit/3c429ef297ac010c985639152c073fc91f2e8370) contains all 51 intended files. Their contents matched the upload package, and all 30 relative Markdown file links had corresponding targets. The original OCR and browser-check records retain their recorded dates. This subsequent documentation revision clarifies the development timeline and reporting.
 
 ## AI assistance
 
-I used Codex to assist with code, sample artwork, figures and report drafting, and to execute the recorded checks. Its suggestions included test splits, error costs and comparison rules. Raw outputs and browser records document the checks and revisions. My project direction, scope choice and requests for the three improvements are described in the development record. Codex also translated the supplied task account and checked the descriptive calculations. Tesseract performs runtime recognition.
+I used Codex to assist with code, sample artwork, figures and report drafting, and to execute the recorded checks. Its suggestions included test splits, error costs and comparison rules. Raw outputs and browser records document the checks and revisions. My project direction, scope choice and requests for the three improvements are described in the development record. Codex also checked the descriptive calculations. Tesseract performs runtime recognition.
 
 ## Sources and additional files
 
