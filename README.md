@@ -1,6 +1,5 @@
 # Product Image Review
 
-Prose word count: 1011
 
 ## Project status
 
